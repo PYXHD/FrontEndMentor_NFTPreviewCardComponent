@@ -26,7 +26,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $secondaryFontColor-hover;
+        background: $img-hover;
         border-radius: 10px;
         transition: opacity 0.3s ease-in;
         opacity: 0;
@@ -42,6 +42,12 @@ main {
 
       h1 {
         @include fontText(400, 1.5rem, $white);
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          color: $secondaryFontColor;
+        }
       }
       p {
         @include fontText(300, 1rem, $primaryFontColor);
@@ -89,11 +95,17 @@ main {
         border-radius: 25px;
       }
 
-      p {
-        @include fontText(300, 0.875rem, $secondaryFontColor);
+      span {
+        @include fontText(300, 0.875rem, $primaryFontColor);
 
-        span {
+        a {
+          text-decoration: none;
           color: $white;
+          transition: 0.3s ease;
+
+          &:hover {
+            color: $secondaryFontColor;
+          }
         }
       }
     }

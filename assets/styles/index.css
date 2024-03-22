@@ -92,6 +92,12 @@ main .card-container .text-container h1 {
   font-weight: 400;
   font-size: 1.5rem;
   color: white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+main .card-container .text-container h1:hover {
+  color: rgb(0, 255, 246);
 }
 main .card-container .text-container p {
   font-family: Outfit;
@@ -162,12 +168,18 @@ main .card-container .author-container img {
   border: 1px solid white;
   border-radius: 25px;
 }
-main .card-container .author-container p {
+main .card-container .author-container span {
   font-family: Outfit;
   font-weight: 300;
   font-size: 0.875rem;
-  color: rgb(0, 255, 246);
+  color: rgb(139, 171, 217);
 }
-main .card-container .author-container p span {
+main .card-container .author-container span a {
+  text-decoration: none;
   color: white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .card-container .author-container span a:hover {
+  color: rgb(0, 255, 246);
 }/*# sourceMappingURL=index.css.map */

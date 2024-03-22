@@ -8,10 +8,9 @@ $font: Outfit;
 $white: white;
 $primaryFontColor: rgb(139, 171, 217);
 $secondaryFontColor: rgb(0, 255, 246);
-$secondaryFontColor-hover: rgba(0, 255, 247, 0.5);
+$img-hover: rgba(0, 255, 247, 0.5);
 $bg-body: rgb(12, 24, 43);
 $bg-card: rgb(20, 36, 61);
-$color5: rgb(46, 65, 90);
 
 @mixin fontText($f-weight, $f-size, $f-color) {
   font-family: $font;
