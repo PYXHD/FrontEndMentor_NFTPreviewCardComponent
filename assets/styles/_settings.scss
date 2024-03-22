@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Outfit;
+  src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+
+$font: Outfit;
+
+$white: white;
+$primaryFontColor: rgb(139, 171, 217);
+$secondaryFontColor: rgb(0, 255, 246);
+$secondaryFontColor-hover: rgba(0, 255, 247, 0.5);
+$bg-body: rgb(12, 24, 43);
+$bg-card: rgb(20, 36, 61);
+$color5: rgb(46, 65, 90);
+
+@mixin fontText($f-weight, $f-size, $f-color) {
+  font-family: $font;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  color: $f-color;
+}
+@mixin flexColumn($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $gap;
+}
+@mixin flexRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg-body;
+}
